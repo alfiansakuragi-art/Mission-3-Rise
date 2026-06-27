@@ -18,6 +18,7 @@
     <nav>
       <img class="logo" src="asset/logo.png" alt="" />
       <div class="container-profil">
+        <button id="login-popup" >Login</button>
         <p>kategory</p>
         <img src="asset/Avatar.png" alt="avatar" />
       </div>
@@ -35,32 +36,94 @@
       <div class="login-container">
         <form action="#" method="#">
           <div class="login-card">
-            <button class="close"><ion-icon name="close-circle"></ion-icon></button>
+            <span class="close"><ion-icon name="close-outline"></ion-icon></span>
             <h1>Login</h1>
             <div class="form-box">
-              <span><ion-icon name="person-circle-outline"></ion-icon></span>
-              <input type="text">
               <label>Username</label>
+              <span><ion-icon name="person-circle-outline"></ion-icon></span>
+              <input type="text" required>
             </div>
             <div class="form-box">
-              <span><ion-icon name="key"></ion-icon></span>
-              <input type="password">
               <label>Password</label>
+              <span><ion-icon name="key"></ion-icon></span>
+              <input type="password" required>
             </div>
             <div class="remember-forgot">
-              <input id="remember-me" type="checkbox">
-              <label for="remember-me">Remember me</label>
+              <span><input id="remember-me" type="checkbox" required>Remember me</span>
               <span><a href="#">forgot password?</a></span>
             </div>
             <div class="form-box">
               <button type="submit">Login</button>
-              <button id="google" type="submit">Login dengan google</button>
-              <label for="google"><ion-icon name="logo-google"></ion-icon></label>
+              <div class="google">
+                <div class="icon-google"><ion-icon name="logo-google"></ion-icon></div>
+                <button id="google" type="submit">Login dengan google</button>
+              </div>
+            </div>
+            <div class="form-box">
+              <div class="register-link">
+                <h3>Don't have an account? <a href="#">Register now</a></h3>
+              </div>
             </div>
           </div>
         </form>
       </div>
-      <div class="register-container"></div>
+      <div class="register-container">
+        <form action="#" method="#">
+          <div class="register-card">
+            <span class="close"><ion-icon name="close-outline"></ion-icon></span>
+            <h1>Register</h1>
+            <div class="form-box">
+              <label>Name</label>
+              <span><ion-icon name="person-circle-outline"></ion-icon></span>
+              <input type="text" required>
+            </div>
+            <div class="form-box">
+              <label>E-Mail</label>
+              <span><ion-icon name="mail"></ion-icon></span>
+              <input type="email" required>
+            </div>
+            <div class="form-box">
+              <label>Gender</label>
+              <span><ion-icon name="male-female"></ion-icon></span>
+              <select name="gender" id="gender">
+                <option value="male">Male</option>
+                <option value="Female">Female</option>
+                <option value="anonym">Biji Satu</option>
+              </select>
+            </div>
+            <div class="form-box">
+              <label>Number</label>
+              <span><ion-icon name="call"></ion-icon></span>
+              <input type="tel" required>
+            </div>
+            <div class="form-box">
+              <label>Password</label>
+              <span><ion-icon name="eye"></ion-icon></span>
+              <input type="password" required>
+            </div>
+            <div class="form-box">
+              <label>Re-Entry Password</label>
+              <span><ion-icon name="eye"></ion-icon></span>
+              <input type="password" required>
+            </div>
+            <div class="remember-forgot">
+              <span><input id="remember-me" type="checkbox" required>Read Terms & policy</span>
+            </div>
+            <div class="form-box">
+              <button type="submit">Regist</button>
+              <div class="google">
+                <div class="icon-google"><ion-icon name="logo-google"></ion-icon></div>
+                <button id="google" type="submit">Register With Google</button>
+              </div>
+            </div>
+            <div class="form-box">
+              <div class="Login-link">
+                <h3>Already have an account?<a href="#">Login now</a></h3>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
     </section>
     <section class="hero-section">
       <div class="hero-card">
@@ -365,6 +428,7 @@
     </section>
   </footer>
   <script src="script/script.js"></script>
+  <script src="script/login.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
 </body>
