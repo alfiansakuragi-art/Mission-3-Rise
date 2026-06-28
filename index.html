@@ -4,11 +4,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="global.css" />
-  <link rel="stylesheet" href="header.css" />
-  <link rel="stylesheet" href="main.css" />
-  <link rel="stylesheet" href="footer.css" />
-  <link rel="stylesheet" href="login-register.css" />
+  <link rel="stylesheet" href="styles/footer.css" />
+  <link rel="stylesheet" href="styles/global.css" />
+  <link rel="stylesheet" href="styles/header.css" />
+  <link rel="stylesheet" href="styles/login-register.css" />
+  <link rel="stylesheet" href="styles/main.css" />
   <title>VIDEOBELAJAR.id</title>
 </head>
 
@@ -18,17 +18,19 @@
     <nav>
       <img class="logo" src="asset/logo.png" alt="" />
       <div class="container-profil">
-        <button id="login-popup" >Login</button>
+        <button id="login-popup">Login</button>
         <p>kategory</p>
         <img src="asset/Avatar.png" alt="avatar" />
       </div>
       <span id="hamburger"><ion-icon name="menu"></ion-icon></span>
-      <div class="sidebar">
-        <img src="asset/Avatar.png" alt="avatar">
-        <button>Login</button>
-      </div>
     </nav>
   </header>
+
+  <div class="sidebar">
+    <span id="hamburger-close"><ion-icon name="menu"></ion-icon></span>
+    <img src="asset/Avatar.png" alt="avatar">
+    <button id="hamburger-login">Login</button>
+  </div>
 
   <!-- MAIN PAGE -->
   <main>
